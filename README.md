@@ -15,7 +15,7 @@
     <li><a href="https://github.com/GonzaloRando03/GonzaloShop_ServerGraphQL">Servidor GraphQL</a></li>
     <li><a href="https://github.com/GonzaloRando03/GonzaloShop_User_Microservice">Microservicio de usuarios</a></li>
     <li><a href="https://github.com/GonzaloRando03/GonzaloShop_Product_Microservice">Microservicio de productos</a></li>
-    <li><a href="https://github.com/GonzaloRando03/GonzaloShop_Buy_Microservice">Microservicio de compraas</a></li>
+    <li><a href="https://github.com/GonzaloRando03/GonzaloShop_Buy_Microservice">Microservicio de compras</a></li>
     <li><a href="">Estructura de las bases de datos</a></li>
 </ol>
 NOTA: En el índice teneis los enlaces a los repositórios de cada parte del proyecto. En el readme.md de cada parte individual encontrareis más información como, explicación del código, capturas de pantalla, testing de la aplicación, etc.
