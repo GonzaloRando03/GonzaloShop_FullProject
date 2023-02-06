@@ -21,7 +21,7 @@
 NOTA: En el índice teneis los enlaces a los repositórios de cada parte del proyecto. En el readme.md de cada parte individual encontrareis más información como, explicación del código, capturas de pantalla, testing de la aplicación, etc.
 <br/><br/>
 
-<h2 id="1">1.Explicación del proyecto</h2>
+<h2 id="1">1. Explicación del proyecto</h2>
 
 El proyecto consta de una tienda online con un sistema de compra simulado. Puedes realizar acciones como crear usuarios y registrarte, añadir dinero a tu monedero, interactuar con los productos, aplicar filtros a tus búsquedas, valorar productos, añadirlos al carrito y posteriormente realizar pedidos.
 
@@ -40,3 +40,5 @@ La estructura del proyecto es la siguiente:
    - El microservicio de compras está desarrollacon con PHP y Laravel, comparte la base de datos MySQL con el microservicio de usuarios.
    - El microservicio de usuarios está desarrollado con Python y Django, comparte la base de datos MySQL con el microservicio de compras.
    - El microservicio de productos está desarrollado con JavaScript y Node.js, usa la base de datos MongoDB.
+   
+   <h2>2. Frontend</h2>
