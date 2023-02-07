@@ -40,5 +40,42 @@ La estructura del proyecto es la siguiente:
    - El microservicio de compras está desarrollacon con PHP y Laravel, comparte la base de datos MySQL con el microservicio de usuarios.
    - El microservicio de usuarios está desarrollado con Python y Django, comparte la base de datos MySQL con el microservicio de compras.
    - El microservicio de productos está desarrollado con JavaScript y Node.js, usa la base de datos MongoDB.
+  
+   <br/>
+   <br/>
    
-   <h2>2. Frontend</h2>
+<h2 id="2">2. Frontend</h2>
+La documentación del frontend se encuentra en su propio repositorio. Haz <a href="https://github.com/GonzaloRando03/GonzaloShop_Frontend">click aquí</a> para acceder a ella.
+
+<br/>
+<br/>
+
+<h2 id="3">3. Servidor GraphQL</h2>
+La documentación del servidor GraphQL se encuentra en su propio repositorio. Haz <a href="https://github.com/GonzaloRando03/GonzaloShop_ServerGraphQL">click aquí</a> para acceder a ella.
+
+<br/>
+<br/>
+
+<h2 id="4">4. Microservicio de usuarios</h2>
+La documentación del microservicio de usuarios se encuentra en su propio repositorio. Haz <a href="https://github.com/GonzaloRando03/GonzaloShop_User_Microservice">click aquí</a> para acceder a ella.
+
+<br/>
+<br/>
+
+<h2 id="5">5. Microservicio de productos</h2>
+La documentación del microservicio de productos se encuentra en su propio repositorio. Haz <a href="https://github.com/GonzaloRando03/GonzaloShop_Product_Microservice">click aquí</a> para acceder a ella.
+
+<br/>
+<br/>
+
+<h2 id="6">6. Microservicio de compras</h2>
+La documentación del microservicio de compras se encuentra en su propio repositorio. Haz <a href="https://github.com/GonzaloRando03/GonzaloShop_Buy_Microservice">click aquí</a> para acceder a ella.
+
+<br/>
+<br/>
+
+<h2 id="7">7. Estructura de las bases de datos.</h2>
+La plicación cuenta con dos bases de datos, una relacional con MySQL y otra NoSQL con MongoDB. A continuación veremos la estructura de las tablas/documentos.
+
+<br/>
+<h3 id="7.1">7.1 Base de datos MySQL.</h3>
