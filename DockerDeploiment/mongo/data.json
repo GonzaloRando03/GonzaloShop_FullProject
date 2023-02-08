@@ -1,0 +1,384 @@
+[{
+    "name": "Calvin Klein Pack de 3 Bóxers para Hombre 3 Pk Trunk con Stretch",
+    "price": 25,
+    "category": "Ropa",
+    "description": "Mezcla de algodón y elastano, 95% Algodón, 5% Elastano",
+    "features":{
+      "colors": ["negro"],
+      "size": ["L", "M", "S", "XL"]
+    },
+    "images": "0",
+    "brand": "Calvin Klein",
+    "type": "Calzoncillos Ropa Interior",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+  },{
+    "name": "Levi's 512™ Slim Taper Vaqueros Hombre",
+    "price": 45,
+    "category": "Ropa",
+    "description": "Fabricados con +Levi's Flex Eco Performance: nuestra mejor tecnología advanced Stretch, desarrollada para ofrecer una flexibilidad y una comodidad máximas",
+    "features":{
+      "colors": ["azul"],
+      "size": [36,38,40,41,42,43,45]
+    },
+    "images": "1",
+    "brand": "Levis",
+    "type": "Pantalones Vaqueros",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+    "sale": false
+  },{
+    "name": "Geographical Norway - Sudadera DE Hombre GYMCLASS",
+    "price": 34.89,
+    "category": "Ropa",
+    "description": "Sudadera capucha hombre GYMCLASS de Geographical Norway bandera característica de la marca impresa sobre el pecho",
+    "features":{
+      "colors": ["blanco"],
+      "size": ["S", "M", "L", "XL"]
+    },
+    "images": "2",
+    "brand": "Geographical Norway",
+    "type": "Sudadera Abrigo",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+  },{
+    "name": "Oso / Osito de Peluche con 'I Love You' de corazón - 25 cm - Marrón",
+    "price": 17.99,
+    "category": "Juguetes",
+    "description": "Este osito de felpa súper suave con un tamaño práctico de 25 cm cabe fácilmente en una habitación de bebé, en un bolso de bebé o, por ejemplo, en una mesa de trabajo - con su práctico colgador, el osito de peluche de corazón se puede colocar en cualquier lugar de forma decorativa",
+    "features":{
+      "colors": ["marron", "rojo"],
+      "height": 25
+    },
+    "images": "3",
+    "brand": "BRUBAKER",
+    "type": "Oso de Peluche",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale":false
+},{
+    "name": "SteelSeries Arctis Nova Pro Xbox - Auriculares gaming multisistema",
+    "price": 229,
+    "category": "Tecnología",
+    "description": "Almighty Audio: vive la claridad y el sonido total con controladores de alta fidelidad de gran calidad. Personaliza tu experiencia de sonido con el software Sonar utilizando el primer ecualizador paramétrico de gaming con calidad pro.",
+    "features":{
+      "colors": ["negro"],
+      "conectors": ["Alámbrico"]
+    },
+    "images": "4",
+    "brand": "SteelSeries",
+    "type": "Auriculares Cascos Gaming",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+    "name": "Utopia Bedding Juego Sábanas de Cama - Microfibra Cepillada - Sábanas y Fundas de Almohada (Cama 150, Gris)",
+    "price": 16.99,
+    "category": "Hogar",
+    "description": "JUEGO DE SABANAS - El juego de sábanas de 4 piezas incluye 1 sábana plana de 266 x 259 cm, 1 sábana bajera de 150 x 200 cm con bolsillo de 35 cm de profundidad y 2 fundas de almohada de 50 x 75 cm con cierre de sobre de 10 cm. (Funda de edredón NO INCLUIDO)",
+    "features":{
+      "colors": ["gris"],
+      "width": 150,
+      "height": 200,
+      "material": "Poliéster"
+    },
+    "images": "5",
+    "brand": "Utopia Bedding",
+    "type": "Sábanas Cama Sabanas Cama",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+    "name": "Cecotec Aspirador de Mano Conga Immortal ExtremeSuction 22,2 V Hand. Potente. para sólidos y líquidos. Tecnología ciclónica.",
+    "price": 43.57,
+    "category": "Hogar",
+    "description": "Aspirador de mano de sólidos y líquidos ligero, práctico y potente. Batería extraíble de Li-Ion que alarga la vida del aspirador x 2. Diseñado sin cables podrás aspirar tu hogar o vehículo con total libertad.",
+    "features":{
+      "colors": ["negro"],
+      "filtro": "Cartucho",
+      "alimentacion": "Batería"
+    },
+    "images": "6",
+    "brand": "Cecotec",
+    "type": "Aspirador Aspiradora",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+    "sale": true
+},{
+    "name": "Cecotec Sandwichera con Revestimiento Antiadherente RocknToast Square. 750 W",
+    "price": 19.99,
+    "category": "Cocina",
+    "description": "Sandwichera con capacidad para 2 sándwiches. Acabados en acero inoxidable. Indicador luminoso de alcance de temperatura",
+    "features":{
+      "colors": ["gris", "negro"],
+      "width": 26,
+      "length": 26
+    },
+    "images": "7",
+    "brand": "Cecotec",
+    "type": "Sandwichera",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+    "name": "Vileda Profesional 235385 Bayetas Microfibra Azul, 38 x 35cm, 5 Unidades",
+    "price": 11.99,
+    "category": "Hogar",
+    "description": "Ideal para superficies lisas y brillantes, como espejos, cristales, encimeras, acero inoxidable, carrocería del coche",
+    "features":{
+      "colors": ["azul"],
+      "width": 35,
+      "length": 35
+    },
+    "images": "8",
+    "brand": "Vileda",
+    "type": "Bayeta Trapo Paño",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+    "name": "Kingston A400 SSD Disco duro sólido interno 2.5 SATA Rev 3.0, 480GB - SA400S37/480G",
+    "price": 36.91,
+    "category": "Tecnología",
+    "description": "Diversas capacidades, con suficiente espacio para aplicaciones o para sustituir un disco duro",
+    "features":{
+      "colors": ["negro"],
+      "capacidad": 480,
+      "conectors": ["SATA3"]
+    },
+    "images": "9",
+    "brand": "Kingston",
+    "type": "Disco SSD 480 GB",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+    "sale": false
+},{
+    "name": "Kingston A400 SSD Disco duro sólido interno 2.5 SATA Rev 3.0, 240GB - SA400S37/240G",
+    "price": 23.91,
+    "category": "Tecnología",
+    "description": "Diversas capacidades, con suficiente espacio para aplicaciones o para sustituir un disco duro",
+    "features":{
+      "colors": ["negro"],
+      "capacidad": 240,
+      "conectors": ["SATA3"]
+    },
+    "images": "10",
+    "brand": "Kingston",
+    "type": "Disco SSD 240 GB",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+    "name": "Kingston A400 SSD Disco duro sólido interno 2.5 SATA Rev 3.0, 1024GB - SA400S37/1024G",
+    "price": 84.35,
+    "category": "Tecnología",
+    "description": "Diversas capacidades, con suficiente espacio para aplicaciones o para sustituir un disco duro",
+    "features":{
+      "colors": ["negro"],
+      "capacidad": 1024,
+      "conectors": ["SATA3"]
+    },
+    "images": "11",
+    "brand": "Kingston",
+    "type": "Disco SSD 1024 GB",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+    "name": "Impresora Multifunción HP DeskJet 2720e",
+    "price": 53.27,
+    "category": "Tecnología",
+    "description": "Imprime, escanea y copia en blanco & negro y en color; la velocidad de impresión es de 7,5 ppm en negro y 5,5 ppm en color",
+    "features":{
+      "colors": ["blanco", "gris"],
+      "width": 17,
+      "height": 12
+    },
+    "images": "12",
+    "brand": "HP",
+    "type": "Impresora",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": true
+},{
+    "name": "Samsung Galaxy Tab A8 - Tablet de 10.5”",
+    "price": 203.10,
+    "category": "Tecnología",
+    "description": "Fabricada para ofrecer una experiencia inmersiva, la Galaxy Tab A8 abre un universo envolvente de contenido, juegos y actividades incluso para los más pequeños.",
+    "features":{
+      "colors": ["negro"],
+      "pantalla": "10.5",
+      "capacidad": 64,
+      "OS": "Android11",
+      "RAM": 4
+    },
+    "images": "13",
+    "brand": "Samsung",
+    "type": "Tablet Tab",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+    "sale": false
+},{
+    "name": "Samsung LF27T352FHRXEN - Monitor Plano de 27 Full HD",
+    "price": 140,
+    "category": "Tecnología",
+    "description": "Monitor 27 pulgadas con panel IPS y ángulo de visión de 178º para una calidad de visionado superior e imágenes cristalinas",
+    "features":{
+      "colors": ["negro"],
+      "pantalla": "27",
+      "resolucion": "1920 x 1080"
+    },
+    "images": "14",
+    "brand": "Samsung",
+    "type": "Pantalla Monitor",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": true
+},{
+    "name": "Xiaomi Redmi 9C Midnight Gray 3GB RAM 64GB ROM",
+    "price": 125,
+    "category": "Tecnología",
+    "description": "Pantalla de 6.53” HD + Dot Drop, MediaTek Helio G35, 5000mAh batería, Bluetooth 5.0, 13MP+5MP Cámaras",
+    "features":{
+      "colors": ["negro"],
+      "pantalla": "7",
+      "OS": "Android4",
+      "RAM": 2,
+      "capacidad": 64
+    },
+    "images": "15",
+    "brand": "Xiaomi",
+    "type": "Movil Teléfono Smartphone",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+    "sale": true
+},{
+    "name": "Juego Monopoly, Juego de Mesa clásico para la Familia",
+    "price": 27.23,
+    "category": "Juguetes",
+    "description": "EMOCIONANTE JUEGO DE LAS PROPIEDADES INMOBILIARIAS. ¡Es un básico para las noches familiares de juegos! Los jugadores compran, venden, sueñan y preparan su camino hacia las riquezas con el juego Monopoly",
+    "features":{
+      "width": 40,
+      "length": 26
+    },
+    "images": "16",
+    "brand": "Monopoly",
+    "type": "Juego de mesa Juguete",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": true
+},{
+    "name": "Tommy Hilfiger Reloj Analógico de Cuarzo multifunción para hombre con Correa en silicona Azul",
+    "price": 130,
+    "category": "Complementos",
+    "description": "Esfera azul marino mate con efecto de rayo de sol y función de día y fecha. Correa azul marino de silicona con diseño de rayas inspirado en las carreras 5 ATM (50 m) de resistencia al agua",
+    "features":{
+      "colors": ["azul", "plata"]
+    },
+    "images": "17",
+    "brand": "Tommy Hilfiger",
+    "type": "Reloj",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": true
+},{
+    "name": "adidas Core18 Hoody Sudadera Hombre",
+    "price": 26.95,
+    "category": "Ropa",
+    "description": "Sudadera negra adidas",
+    "features":{
+      "colors": ["negro"],
+      "size": ["S", "M", "L", "XL"]
+    },
+    "images": "18",
+    "brand": "Adidas",
+    "type": "Sudadera Chandal Chaqueta",
+    "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+    "sale": false
+},{
+  "name": "Levi's Graphic Crewneck B Sudadera Hombre",
+  "price": 22.50,
+  "category": "Ropa",
+  "description": "Modelo casual elaborada en punto suave con un logo Levi's en horizontal en el pecho",
+  "features":{
+    "colors": ["blanco", "rojo"],
+    "size": ["S", "M", "L", "XL"]
+  },
+  "images": "19",
+  "brand": "Levis",
+  "type": "Sudadera Chandal Larga",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+  "sale": false
+},{
+  "name": "adidas 3-Stripes tee T-Shirt Hombre",
+  "price": 14.99,
+  "category": "Ropa",
+  "description": "Ajuste regular, tejido transpirable, tela suave y tiene detalles distintivos de la marca",
+  "features":{
+    "colors": ["blanco", "negro"],
+    "size":["S", "M", "L", "XL"]
+  },
+  "images": "20",
+  "brand": "Adidas",
+  "type": "Camiseta Manga Corta",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+  "sale": false
+},{
+  "name": "NIKE Rpl Park20 - Chaqueta de Deporte, Hombre",
+  "price": 23.13,
+  "category": "Ropa",
+  "description": "Ajuste regular, tejido transpirable, tela suave y tiene detalles distintivos de la marca",
+  "features":{
+    "colors": ["negro"],
+    "size":["L","S","M","XL"]
+  },
+  "images": "21",
+  "brand": "Nike",
+  "type": "Sudadera Chandal Chaqueta",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+  "sale": false
+},{
+  "name": "Abanderado Termal Algodón Invierno C/Redondo Camiseta térmica para Hombre",
+  "price": 9.99,
+  "category": "Ropa",
+  "description": "Camiseta blanca lisa manga larca, producto óptimo para completar los looks informales de todos los días",
+  "features":{
+    "colors": ["blanco"],
+    "size": ["S", "M", "L", "XL"]
+  },
+  "images": "22",
+  "brand": "H&M",
+  "type": "Camiseta Manga Larga Lisa",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+  "sale": false
+},{
+  "name": "Consola PlayStation 5",
+  "price": 563.42,
+  "category": "Tecnología",
+  "description": "Experimenta cargas ultra rápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptivos y el nuevo audio 3D, además de una nueva generación de increíbles juegos de PlayStation",
+  "features":{
+    "colors": ["blanco", "negro"],
+    "width": 43,
+    "height": 48
+  },
+  "images": "23",
+  "brand": "PlayStation",
+  "type": "Consola Videojuegos PlayStation 5 Play Station PlayStation5",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+  "sale": false
+},{
+  "name": "Peluche de Kaito",
+  "price": 15.95,
+  "category": "Juguetes",
+  "description": "Peluche de kaito relleno de algodón, perfecto para dormir",
+  "features":{
+    "colors": ["azul", "negro", "blanco"]
+  },
+  "images": "24",
+  "brand": "Sanrio",
+  "type": "Peluche Kaito Vocaloid",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}, {"username": "juan_ramirez", "text":"Calidad mejorable, pero buen producto", "stars": 3}],
+  "sale": true
+},{
+  "name": "Zotac Gaming GEFORCE RTX 3060 - Tarjeta gráfica Twin Edge OC 12G",
+  "price": 389.99,
+  "category": "Tecnología",
+  "description": "Tarjeta gráfica ZOTAC GAMING GEFORCE RTX 3060 Twin Edge OC 12GB GDDR6",
+  "features":{
+    "colors": ["gris", "negro"],
+    "width": 24,
+    "length": 11,
+    "RAM": 12,
+    "conectors": ["PCIe", "HDMI", "DisplayPort"]
+  },
+  "images": "25",
+  "brand": "Zotac",
+  "type": "Targeta Grafica Gráfica RTX Gaming",
+  "valorations": [{"username": "paco_gonzalez", "text":"Muy buen producto!", "stars": 4.5}],
+  "sale": false
+}
+]
