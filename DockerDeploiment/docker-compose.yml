@@ -9,7 +9,7 @@ services:
     restart: always
     entrypoint: ./entrypoint.sh
     ports:
-      - 3500:3000
+      - 8888:3000
     volumes:
       - ./frontend-data:/etc/frontend-data
     networks:
@@ -58,6 +58,27 @@ services:
     networks:
       netmicroservice:
         ipv4_address: 10.9.0.30
+
+  user-microservice:
+    build:
+      context: ./Python
+      dockerfile: Dockerfile
+    container_name: user-microservice
+    restart: always
+    entrypoint: ./entrypoint.sh
+    environment:
+      PORT: 7000
+      MYSQL_ADDR: 10.9.0.200
+      MYSQL_PORT: 3306
+      MONGODB_URI: mongodb://gonzalo:12345@10.9.0.100:27017/gonzaloShop
+      TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzMjYxNjFmZTZlZTgwYmM5ZjNjNDlkOSIsImlhdCI6MTY2MzUxOTg3Nn0.QIyMubnQuAkCeseIbvq2S1n06Pr1gFtQbsfh7ZaGEk0
+    ports:
+      - 8500:8000
+    volumes:
+      - ./python-data:/etc/microservice-data
+    networks:
+      netmicroservice:
+        ipv4_address: 10.9.0.40
 
 
   mongodb:
@@ -112,3 +133,4 @@ volumes:
   schemas: {}
   frontend: {}
   product-microservice: {}
+  user-microservice: {}
