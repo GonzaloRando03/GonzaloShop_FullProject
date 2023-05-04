@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cd GonzaloShop_Product_Microservice/
 npm install
 node index.js

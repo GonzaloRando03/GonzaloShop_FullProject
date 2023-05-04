@@ -1,7 +1,5 @@
-#!/bin/sh
-cd GonzaloShop_Buy_Microservice/
-composer update
-composer install
-php artisan serve
-#node index.js
+#!/bin/bash
+cd /var/www/html/
+php artisan migrate
+php artisan octane:start --server="swoole" --host="0.0.0.0" 
 tail -f /dev/null

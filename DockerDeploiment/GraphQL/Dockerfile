@@ -1,5 +1,5 @@
-FROM node:19-alpine3.16
-RUN apk update 
-RUN apk add nano git curl
+FROM node:19.6.0-bullseye
+RUN apt update 
+RUN apt install nano git curl -y
 RUN git clone https://github.com/GonzaloRando03/GonzaloShop_ServerGraphQL.git
 COPY ./entrypoint.sh /

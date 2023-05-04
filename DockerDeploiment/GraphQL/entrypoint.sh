@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cd GonzaloShop_ServerGraphQL/
 npm install
 node index.js

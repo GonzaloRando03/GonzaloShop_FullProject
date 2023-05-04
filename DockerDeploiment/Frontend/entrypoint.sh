@@ -1,6 +1,8 @@
 #!/bin/sh
-echo -e export const GQL_ADDR = \"http://127.0.0.1:4500\" > GonzaloShop_Frontend/src/utils/env.ts
+service apache2 start
 cd GonzaloShop_Frontend/
 npm install
-npm start
+npm run build
+cp -r build/* /var/www/html/
+service apache2 reload 
 tail -f /dev/null
