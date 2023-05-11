@@ -7,8 +7,5 @@ RUN apt install nano git curl apache2 -y
 # Clonamos el repositorio de GitHub
 RUN git clone https://github.com/GonzaloRando03/GonzaloShop_Frontend.git 
 
-# Añadimos constante con la dirección del servidor GQL en el fichero env
-RUN echo "export const GQL_ADDR = \"http://graphql:4000\""> GonzaloShop_Frontend/src/utils/env.ts
-
 # Copiamos el entrypoint
 COPY ./entrypoint.sh /
