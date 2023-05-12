@@ -1,0 +1,307 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: frontend
+  template:
+    metadata:
+      labels:
+        role: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: gonzalors23/gonzaloshop-frontend:v1.2
+        command: ["./entrypoint.sh", "http://localhost:30500"]
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30080
+  selector:
+    role: frontend
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graphql
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: graphql
+  template:
+    metadata:
+      labels:
+        role: graphql
+    spec:
+      containers:
+      - name: graphql
+        image: gonzalors23/gonzaloshop-graphql-service:v1
+        command: ["/entrypoint.sh"]
+        env:
+        - name: USER_MICROSERVICE_ADDR
+          value: "http://usermicroservice:8000"
+        - name: BUY_MICROSERVICE_ADDR
+          value: "http://buymicroservice:8000"
+        - name: PRODUCT_MICROSERVICE_ADDR
+          value: "http://productmicroservice:7000"
+        - name: TOKEN
+          value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzMjYxNjFmZTZlZTgwYmM5ZjNjNDlkOSIsImlhdCI6MTY2MzUxOTg3Nn0.QIyMubnQuAkCeseIbvq2S1n06Pr1gFtQbsfh7ZaGEk0"
+        ports:
+        - containerPort: 4000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: graphql
+spec:
+  type: NodePort
+  ports:
+  - port: 4000
+    targetPort: 4000
+    nodePort: 30500
+  selector:
+    role: graphql
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productmicroservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: productmicroservice
+  template:
+    metadata:
+      labels:
+        role: productmicroservice
+    spec:
+      containers:
+      - name: productmicroservice
+        image: gonzalors23/gonzaloshop-product-microservice:v1
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sleep
+            - "20"
+          initialDelaySeconds: 20
+        command: ["./entrypoint.sh"]
+        env:
+        - name: MONGODB_URI
+          value: "mongodb://gonzalo:12345@mongodb:27017/gonzaloShop"
+        - name: PORT
+          value: "7000"
+        - name: TOKEN
+          value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzMjYxNjFmZTZlZTgwYmM5ZjNjNDlkOSIsImlhdCI6MTY2MzUxOTg3Nn0.QIyMubnQuAkCeseIbvq2S1n06Pr1gFtQbsfh7ZaGEk0"
+        ports:
+        - containerPort: 7000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: productmicroservice
+spec:
+  ports:
+  - port: 7000
+    targetPort: 7000
+  selector:
+    role: productmicroservice
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: buymicroservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: buymicroservice
+  template:
+    metadata:
+      labels:
+        role: buymicroservice
+    spec:
+      containers:
+      - name: buymicroservice
+        image: gonzalors23/gonzaloshop-buy-microservice:v1
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sleep
+            - "20"
+          initialDelaySeconds: 20
+        command: ["/entrypoint.sh"]
+        ports:
+        - containerPort: 8000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: buymicroservice
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    role: buymicroservice
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: usermicroservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: usermicroservice
+  template:
+    metadata:
+      labels:
+        role: usermicroservice
+    spec:
+      containers:
+      - name: usermicroservice
+        image: gonzalors23/gonzaloshop-user-microservice:v1
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sleep
+            - "20"
+          initialDelaySeconds: 20
+        command: ["/entrypoint.sh"]
+        env:
+        - name: MYSQL_ADDR
+          value: "mysql"
+        - name: MYSQL_PORT
+          value: "3306"
+        - name: TOKEN
+          value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzMjYxNjFmZTZlZTgwYmM5ZjNjNDlkOSIsImlhdCI6MTY2MzUxOTg3Nn0.QIyMubnQuAkCeseIbvq2S1n06Pr1gFtQbsfh7ZaGEk0"
+        ports:
+        - containerPort: 8000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: usermicroservice
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    role: usermicroservice
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+      - name: mongodb
+        image: gonzalors23/gonzaloshop-mongodb-database:v1.1
+        env:
+        - name: MONGO_INITDB_USERNAME
+          value: "gonzalo"
+        - name: MONGO_INITDB_PASSWORD
+          value: "12345"
+        - name: MONGO_INITDB_DATABASE
+          value: "gonzaloShop"
+        ports:
+        - containerPort: 27017
+        volumeMounts:
+        - name: mongodb-data
+          mountPath: /data/db
+      volumes:
+      - name: mongodb-data
+        persistentVolumeClaim:
+          claimName: mongodb-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: gonzalors23/gonzaloshop-mysql-database:v1
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "12345"
+        - name: MYSQL_DATABASE
+          value: "db_gonzaloshop"
+        - name: MYSQL_USER
+          value: "userdb"
+        - name: MYSQL_PASSWORD
+          value: "12345"
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - name: mysql-data
+          mountPath: /data/db
+      volumes:
+      - name: mysql-data
+        persistentVolumeClaim:
+          claimName: mysql-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
