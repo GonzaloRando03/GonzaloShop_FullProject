@@ -1,6 +1,9 @@
 #!/bin/sh
 # Añadimos constante con la dirección del servidor GQL en el fichero env
-echo "export const GQL_ADDR = \"$1\""> GonzaloShop_Frontend/src/utils/env.ts
+if [ $1 ]; then
+    echo "export const GQL_ADDR = \"$1\""> GonzaloShop_Frontend/src/utils/env.ts
+fi
+
 service apache2 start
 cd GonzaloShop_Frontend/
 npm install
