@@ -1,4 +1,7 @@
 #!/bin/bash
+# Ejecutamos sleep para que la base de datos mysql tenga tiempo para arrancar y realizar la migración
+sleep 60
+
 cd /deploy/app
 
 # Hacemos las migraciones
