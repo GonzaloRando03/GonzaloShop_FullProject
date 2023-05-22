@@ -142,13 +142,7 @@ spec:
     spec:
       containers:
       - name: buymicroservice
-        image: gonzalors23/gonzaloshop-buy-microservice:v1
-        livenessProbe:
-          exec:
-            command:
-            - /bin/sleep
-            - "20"
-          initialDelaySeconds: 20
+        image: gonzalors23/gonzaloshop-buy-microservice:v1.3
         command: ["/entrypoint.sh"]
         ports:
         - containerPort: 8000
@@ -182,13 +176,7 @@ spec:
     spec:
       containers:
       - name: usermicroservice
-        image: gonzalors23/gonzaloshop-user-microservice:v1
-        livenessProbe:
-          exec:
-            command:
-            - /bin/sleep
-            - "20"
-          initialDelaySeconds: 20
+        image: gonzalors23/gonzaloshop-user-microservice:v1.2
         command: ["/entrypoint.sh"]
         env:
         - name: MYSQL_ADDR
@@ -221,11 +209,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongodb
+      role: mongodb
   template:
     metadata:
       labels:
-        app: mongodb
+        role: mongodb
     spec:
       containers:
       - name: mongodb
@@ -246,6 +234,7 @@ spec:
       - name: mongodb-data
         persistentVolumeClaim:
           claimName: mongodb-pvc
+
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -259,6 +248,18 @@ spec:
       storage: 5Gi
 
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb
+spec:
+  ports:
+  - port: 27017
+    targetPort: 27017
+  selector:
+    role: mongodb
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -267,11 +268,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql
+      role: mysql
   template:
     metadata:
       labels:
-        app: mysql
+        role: mysql
     spec:
       containers:
       - name: mysql
@@ -294,6 +295,7 @@ spec:
       - name: mysql-data
         persistentVolumeClaim:
           claimName: mysql-pvc
+
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -305,3 +307,15 @@ spec:
   resources:
     requests:
       storage: 5Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  ports:
+  - port: 3306
+    targetPort: 3306
+  selector:
+    role: mysql
