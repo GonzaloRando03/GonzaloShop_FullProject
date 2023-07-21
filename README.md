@@ -19,6 +19,7 @@
     <li><a href="">Estructura de las bases de datos</a></li>
 </ol>
 NOTA: En el índice teneis los enlaces a los repositórios de cada parte del proyecto. En el readme.md de cada parte individual encontrareis más información como, explicación del código, capturas de pantalla, testing de la aplicación, etc.
+NOTA: La documentación del proyecto se encuentra en el PDF dentro del repositorio.
 <br/><br/>
 
 <h2 id="1">1. Explicación del proyecto</h2>
