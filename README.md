@@ -75,7 +75,4 @@ La documentación del microservicio de compras se encuentra en su propio reposit
 <br/>
 
 <h2 id="7">7. Estructura de las bases de datos.</h2>
-La plicación cuenta con dos bases de datos, una relacional con MySQL y otra NoSQL con MongoDB. A continuación veremos la estructura de las tablas/documentos.
-
-<br/>
-<h3 id="7.1">7.1 Base de datos MySQL.</h3>
+La plicación cuenta con dos bases de datos, una relacional con MySQL y otra NoSQL con MongoDB.
